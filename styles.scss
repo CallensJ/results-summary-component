@@ -1,3 +1,101 @@
-body{
-    font-family: 'Hanken Grotesk', sans-serif;
+$light-slate-blue: #7857ff;
+$light-royal-blue: #2e2be9;
+
+$pale-blue: hsl(221, 100%, 96%);
+$light-lavender: hsl(241, 100%, 89%);
+
+$white: hsl(0, 0%, 100%);
+
+//circle
+$violet-blue: #4e21ca;
+$persian-blue: #2421ca00;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+.main-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .container {
+      border: 1px solid red;
+      max-width: 375px;
+      .bloc-1 {
+        border-bottom-left-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+      .userResults {
+        padding-top: 2rem;
+        font-size: 1.3rem;
+        color: $pale-blue;
+      }
+      background: linear-gradient(
+        190deg,
+        rgba(120, 87, 255, 1) 0%,
+        rgba(46, 43, 233, 1) 100%
+      );
+      text-align: center;
+      .circle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgb(78, 33, 202);
+        background: linear-gradient(
+          190deg,
+          rgba(78, 33, 202, 1) 0%,
+          rgba(36, 33, 202, 1) 100%
+        );
+        border-radius: 50%;
+        margin: 1.6rem auto;
+        width: 10rem;
+        height: 10rem;
+        h1 {
+          color: #ffffff;
+          font-size: 4rem;
+        }
+      }
+
+      .congratulations {
+        padding: 0 6rem 2rem 6rem;
+        text-align: center;
+        h2 {
+          color: $white;
+          font-size: 2rem;
+          font-weight: 500;
+        }
+        p {
+          margin-top: 1rem;
+          color: $pale-blue;
+          text-align: center;
+          font-size: 1.4rem;
+        }
+      }
+    }
+
+    .bloc-2{
+        padding: 2rem;
+        .summary{
+            .reaction{
+                background: hsla(0, 100%, 67%, 0.1);
+                border-radius:1rem;
+                display: flex;
+                p{
+                    color: hsl(0, 100%, 67%);
+                }
+            }
+        }
+    }
+  }
 }

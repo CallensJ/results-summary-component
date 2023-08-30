@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+.main-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-container .container {
+  border: 1px solid red;
+  max-width: 375px;
+}
+.main-container .container .bloc-1 {
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  background: linear-gradient(190deg, rgb(120, 87, 255) 0%, rgb(46, 43, 233) 100%);
+  text-align: center;
+}
+.main-container .container .bloc-1 .userResults {
+  padding-top: 2rem;
+  font-size: 1.3rem;
+  color: hsl(221, 100%, 96%);
+}
+.main-container .container .bloc-1 .circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(78, 33, 202);
+  background: linear-gradient(190deg, rgb(78, 33, 202) 0%, rgb(36, 33, 202) 100%);
+  border-radius: 50%;
+  margin: 1.6rem auto;
+  width: 10rem;
+  height: 10rem;
+}
+.main-container .container .bloc-1 .circle h1 {
+  color: #ffffff;
+  font-size: 4rem;
+}
+.main-container .container .bloc-1 .congratulations {
+  padding: 0 6rem 2rem 6rem;
+  text-align: center;
+}
+.main-container .container .bloc-1 .congratulations h2 {
+  color: hsl(0, 0%, 100%);
+  font-size: 2rem;
+  font-weight: 500;
+}
+.main-container .container .bloc-1 .congratulations p {
+  margin-top: 1rem;
+  color: hsl(221, 100%, 96%);
+  text-align: center;
+  font-size: 1.4rem;
+}
+.main-container .container .bloc-2 {
+  padding: 2rem;
+}
+.main-container .container .bloc-2 .summary .reaction {
+  background: hsla(0, 100%, 67%, 0.1);
+  border-radius: 1rem;
+  display: flex;
+}
+.main-container .container .bloc-2 .summary .reaction p {
+  color: hsl(0, 100%, 67%);
+}/*# sourceMappingURL=styles.css.map */
