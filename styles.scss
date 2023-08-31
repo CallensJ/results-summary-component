@@ -10,6 +10,9 @@ $white: hsl(0, 0%, 100%);
 $violet-blue: #4e21ca;
 $persian-blue: #2421ca00;
 
+//neutral
+$dark-grey-blue: hsl(224, 30%, 27%);
+
 * {
   margin: 0;
   padding: 0;
@@ -31,11 +34,13 @@ body {
   justify-content: center;
   align-items: center;
   .container {
-      border: 1px solid red;
-      max-width: 375px;
-      .bloc-1 {
-        border-bottom-left-radius: 2rem;
-        border-bottom-right-radius: 2rem;
+    display: flex;
+    
+    .bloc-1 {
+      border-bottom-left-radius: 2rem;
+      border-bottom-right-radius: 2rem;
+      width: 300px;
+      
       .userResults {
         padding-top: 2rem;
         font-size: 1.3rem;
@@ -84,18 +89,102 @@ body {
       }
     }
 
-    .bloc-2{
-        padding: 2rem;
-        .summary{
-            .reaction{
-                background: hsla(0, 100%, 67%, 0.1);
-                border-radius:1rem;
-                display: flex;
-                p{
-                    color: hsl(0, 100%, 67%);
-                }
-            }
+    .bloc-2 {
+      padding: 2rem;
+      width: 300px;
+      
+      .summary {
+        .score {
+          color: $light-lavender;
+          font-weight: 700;
+          font-size: 1.4rem;
+          span {
+            font-weight: 800;
+            font-size: 1.4rem;
+            color: $dark-grey-blue;
+          }
         }
+        .reaction {
+          background: hsla(0, 100%, 67%, 0.1);
+          border-radius: 1rem;
+          padding: 1rem;
+          margin: 1rem 0;
+
+          p {
+            color: hsl(0, 100%, 67%);
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-left: 1rem;
+          }
+        }
+        .memory {
+          padding: 1rem;
+          margin: 1rem 0;
+          p {
+            color: hsl(39, 100%, 56%);
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-left: 1rem;
+          }
+        }
+        .verbal {
+          padding: 1rem;
+          margin: 1rem 0;
+
+          p {
+            color: hsl(166, 100%, 37%);
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-left: 1rem;
+          }
+        }
+        .visual {
+          padding: 1rem;
+          margin: 1rem 0;
+
+          p {
+            color: hsl(234, 85%, 45%);
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-left: 1rem;
+          }
+        }
+      }
+
+      .btn {
+        width: 100%;
+        padding: 1.4rem 4rem;
+        margin: 1rem 0;
+        background-color: hsl(224, 30%, 27%);
+        border-radius: 2rem;
+        border: none;
+        cursor: pointer;
+        color: $white;
+        font-weight: 600;
+        font-size: 1.6rem;
+      }
     }
   }
+}
+
+//my classes
+
+.flex {
+  display: flex;
+}
+.jc-sb {
+  justify-content: space-between;
+}
+.ai-c {
+  align-items: center;
+}
+
+//media querie
+@media (max-width: 376px){
+.container{
+  border: 1px solid red;
+  flex-direction: column;
+  
+
+}
 }

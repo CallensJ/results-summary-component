@@ -31,7 +31,7 @@ The designs were created to the following widths:
 - White: hsl(0, 0%, 100%)
 - Pale blue: hsl(221, 100%, 96%)
 - Light lavender: hsl(241, 100%, 89%)
-- Dark gray blue: hsl(224, 30%, 27%)
+- Dark gray blue: hsl(224, 30%, 27%);
 
 ### Notes
 
