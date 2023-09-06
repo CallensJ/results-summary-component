@@ -6,6 +6,158 @@
 }
 
 html {
+  font-size: 62.5%;
   box-sizing: border-box;
   font-family: "Hanken Grotesk", sans-serif;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+section .wrapper {
+  width: 60rem;
+  box-shadow: 5px 5px 9px 2px rgba(171, 171, 171, 0.75);
+  display: flex;
+  border-radius: 2rem;
+}
+section .wrapper .globalScoreBloc {
+  background: rgb(120, 87, 255);
+  background: linear-gradient(180deg, rgb(120, 87, 255) 10%, rgb(46, 43, 233) 100%);
+  border-radius: 2rem;
+}
+section .wrapper .globalScoreBloc .content {
+  width: 250px;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+section .wrapper .globalScoreBloc .content .title {
+  color: hsl(221, 100%, 96%);
+  font-size: 2rem;
+  font-weight: 500;
+  padding-bottom: 2rem;
+}
+section .wrapper .globalScoreBloc .content .circle {
+  background: hsl(256, 72%, 46%);
+  background: linear-gradient(1deg, hsl(256, 72%, 46%) 100%, hsla(241, 72%, 46%, 0) 100%);
+  width: 14rem;
+  height: 14rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+}
+section .wrapper .globalScoreBloc .content .circle .totalScore {
+  color: hsl(0, 0%, 100%);
+  font-size: 6rem;
+  font-weight: 800;
+}
+section .wrapper .globalScoreBloc .content .circle .total {
+  color: hsl(241, 100%, 89%);
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+section .wrapper .globalScoreBloc .congratulations {
+  margin-bottom: 4rem;
+}
+section .wrapper .globalScoreBloc .congratulations h2 {
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  font-size: 2.6rem;
+  margin-bottom: 1rem;
+}
+section .wrapper .globalScoreBloc .congratulations .message {
+  color: hsl(241, 100%, 89%);
+  font-size: 1.8rem;
+}
+section .wrapper .userScoresBloc {
+  width: 300px;
+  margin: 0 auto;
+}
+section .wrapper .userScoresBloc .userContent {
+  padding: 1rem;
+}
+section .wrapper .userScoresBloc .userContent .reaction {
+  background-color: hsla(0, 100%, 67%, 0.2);
+  margin-top: 2rem;
+}
+section .wrapper .userScoresBloc .userContent .reaction .name {
+  color: hsl(0, 100%, 67%);
+}
+section .wrapper .userScoresBloc .userContent .memory {
+  background-color: hsla(39, 100%, 56%, 0.2);
+}
+section .wrapper .userScoresBloc .userContent .memory .name {
+  color: hsl(39, 100%, 56%);
+}
+section .wrapper .userScoresBloc .userContent .verbal {
+  background-color: hsla(166, 100%, 37%, 0.2);
+}
+section .wrapper .userScoresBloc .userContent .verbal .name {
+  color: hsl(166, 100%, 37%);
+}
+section .wrapper .userScoresBloc .userContent .visual {
+  background-color: hsla(234, 85%, 45%, 0.2);
+  margin-bottom: 2rem;
+}
+section .wrapper .userScoresBloc .userContent .visual .name {
+  color: hsl(234, 85%, 45%);
+}
+section .wrapper .userScoresBloc .btn {
+  width: 100%;
+  border-radius: 3rem;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.8rem;
+  padding: 1.8rem 0;
+  background-color: hsl(224, 30%, 27%);
+  color: hsl(0, 0%, 100%);
+  margin-top: 1rem;
+}
+
+.reaction,
+.memory,
+.verbal,
+.visual {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+.reaction .name,
+.memory .name,
+.verbal .name,
+.visual .name {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+.reaction .name .icon,
+.memory .name .icon,
+.verbal .name .icon,
+.visual .name .icon {
+  margin-right: 1rem;
+}
+.reaction .userScore span,
+.memory .userScore span,
+.verbal .userScore span,
+.visual .userScore span {
+  color: hsl(224, 30%, 27%);
+}
+
+@media (max-width: 375px) {
+  .wrapper {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=styles.css.map */

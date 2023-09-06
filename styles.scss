@@ -1,14 +1,184 @@
-@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+$pale-blue: hsl(221, 100%, 96%);
+//background gradient
+$Light-slate-blue: #7857ff;
+$Light-royal-blue: #2e2be9;
 
+//gradient circle
+$violet-blue: hsla(256, 72%, 46%, 1);
+$persian-blue: hsla(241, 72%, 46%, 0);
 
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
-html{
-    box-sizing: border-box;
-    font-family: 'Hanken Grotesk', sans-serif;
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+  .wrapper {
+    width: 60rem;
+    box-shadow: 5px 5px 9px 2px rgba(171, 171, 171, 0.75);
+    display: flex;
+    border-radius: 2rem;
+
+    // GLOBAL SCORE BLOC
+    .globalScoreBloc {
+      background: rgb(120, 87, 255);
+      background: linear-gradient(
+        180deg,
+        rgba(120, 87, 255, 1) 10%,
+        rgba(46, 43, 233, 1) 100%
+      );
+      border-radius: 2rem;
+      .content {
+        width: 250px;
+        margin: 0 auto;
+        padding: 1rem;
+        text-align: center;
+        margin-top: 2rem;
+        
+        .title {
+          color: $pale-blue;
+          font-size: 2rem;
+          font-weight: 500;
+          padding-bottom: 2rem;
+        }
+        .circle {
+          background: hsla(256, 72%, 46%, 1);
+          background: linear-gradient(
+            1deg,
+            hsla(256, 72%, 46%, 1) 100%,
+            hsla(241, 72%, 46%, 0) 100%
+          );
+
+          width: 14rem;
+          height: 14rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 0 auto;
+          border-radius: 50%;
+          margin-bottom: 2rem;
+
+          .totalScore {
+            color: hsl(0, 0%, 100%);
+            font-size: 6rem;
+            font-weight: 800;
+          }
+          .total {
+            color: hsl(241, 100%, 89%);
+            font-size: 1.4rem;
+            font-weight: 700;
+          }
+        }
+      }
+
+      .congratulations{
+        
+        margin-bottom: 4rem;
+        h2{
+          color: hsl(0, 0%, 100%);
+          font-weight: 700;
+          font-size: 2.6rem;
+          margin-bottom: 1rem;
+        }
+        .message{
+          color: hsl(241, 100%, 89%);
+          font-size: 1.8rem;
+        }
+      }
+    }
+
+    // USER SCORE BLOC
+    .userScoresBloc {
+      width: 300px;
+      margin: 0 auto;
+      .userContent {
+        padding: 1rem;
+        .reaction {
+          background-color: hsl(0, 100%, 67%, 20%);
+          margin-top: 2rem;
+          .name {
+            color: hsl(0, 100%, 67%);
+          }
+        }
+        .memory {
+          background-color: hsl(39, 100%, 56%, 20%);
+
+          .name {
+            color: hsl(39, 100%, 56%);
+          }
+        }
+        .verbal {
+          background-color: hsl(166, 100%, 37%, 20%);
+          .name {
+            color: hsl(166, 100%, 37%);
+          }
+        }
+        .visual {
+          background-color: hsl(234, 85%, 45%, 20%);
+          margin-bottom: 2rem;
+          .name {
+            color: hsl(234, 85%, 45%);
+          }
+        }
+      }
+
+      .btn {
+        width: 100%;
+        border-radius: 3rem;
+        border: none;
+        cursor: pointer;
+        font-weight: 700;
+        font-size: 1.8rem;
+        padding: 1.8rem 0;
+        background-color: hsl(224, 30%, 27%);
+        color: hsl(0, 0%, 100%);
+        margin-top: 1rem;
+      }
+    }
+  }
+}
+
+.reaction,
+.memory,
+.verbal,
+.visual {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+  .name {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 1.4rem;
+    .icon {
+      margin-right: 1rem;
+    }
+  }
+  .userScore {
+    span {
+      color: hsl(224, 30%, 27%);
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .wrapper {
+    flex-direction: column;
+  }
 }
