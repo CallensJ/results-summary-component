@@ -26,7 +26,10 @@ section .wrapper {
 section .wrapper .globalScoreBloc {
   background: rgb(120, 87, 255);
   background: linear-gradient(180deg, rgb(120, 87, 255) 10%, rgb(46, 43, 233) 100%);
-  border-radius: 2rem;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
 }
 section .wrapper .globalScoreBloc .content {
   width: 250px;

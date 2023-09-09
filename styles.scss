@@ -39,7 +39,10 @@ section {
         rgba(120, 87, 255, 1) 10%,
         rgba(46, 43, 233, 1) 100%
       );
-      border-radius: 2rem;
+      border-top-left-radius: 2rem;
+      border-top-right-radius: 2rem;
+      border-bottom-left-radius: 2rem;
+      border-bottom-right-radius: 2rem;
       .content {
         width: 250px;
         margin: 0 auto;
@@ -180,5 +183,6 @@ section {
 @media (max-width: 375px) {
   .wrapper {
     flex-direction: column;
+
   }
 }
