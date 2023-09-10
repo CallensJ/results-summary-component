@@ -8,6 +8,13 @@ $Light-royal-blue: #2e2be9;
 $violet-blue: hsla(256, 72%, 46%, 1);
 $persian-blue: hsla(241, 72%, 46%, 0);
 
+//gradient
+$gradient: linear-gradient(
+  180deg,
+  rgba(120, 87, 255, 1) 10%,
+  rgba(46, 43, 233, 1) 100%
+);
+
 * {
   margin: 0;
   padding: 0;
@@ -29,27 +36,21 @@ section {
     width: 60rem;
     box-shadow: 5px 5px 9px 2px rgba(171, 171, 171, 0.75);
     display: flex;
-    border-radius: 2rem;
-
+   
+    
     // GLOBAL SCORE BLOC
     .globalScoreBloc {
       background: rgb(120, 87, 255);
-      background: linear-gradient(
-        180deg,
-        rgba(120, 87, 255, 1) 10%,
-        rgba(46, 43, 233, 1) 100%
-      );
-      border-top-left-radius: 2rem;
-      border-top-right-radius: 2rem;
-      border-bottom-left-radius: 2rem;
-      border-bottom-right-radius: 2rem;
+      background: $gradient;
+    
+      
       .content {
         width: 250px;
         margin: 0 auto;
         padding: 1rem;
         text-align: center;
         margin-top: 2rem;
-        
+
         .title {
           color: $pale-blue;
           font-size: 2rem;
@@ -86,16 +87,15 @@ section {
         }
       }
 
-      .congratulations{
-        
+      .congratulations {
         margin-bottom: 4rem;
-        h2{
+        h2 {
           color: hsl(0, 0%, 100%);
           font-weight: 700;
           font-size: 2.6rem;
           margin-bottom: 1rem;
         }
-        .message{
+        .message {
           color: hsl(241, 100%, 89%);
           font-size: 1.8rem;
         }
@@ -143,11 +143,15 @@ section {
         border: none;
         cursor: pointer;
         font-weight: 700;
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         padding: 1.8rem 0;
         background-color: hsl(224, 30%, 27%);
         color: hsl(0, 0%, 100%);
         margin-top: 1rem;
+      }
+      .btn:hover{
+        background: rgb(120, 87, 255);
+        background: $gradient;
       }
     }
   }
@@ -161,7 +165,7 @@ section {
   justify-content: space-between;
   align-items: center;
   border-radius: 0.5rem;
-  padding: 1rem;
+  padding: 1.8rem;
   font-size: 1.4rem;
   margin-bottom: 2rem;
   .name {
@@ -183,6 +187,22 @@ section {
 @media (max-width: 375px) {
   .wrapper {
     flex-direction: column;
-
+   
+    .globalScoreBloc{
+      
+      border-radius: 0 0 2rem 2rem;
+    }
   }
+}
+
+@media(min-width: 376px){
+  .wrapper {
+   border: 1px solid red;
+   border-radius: 0 2rem 2rem 0;
+    
+    
+    .globalScoreBloc{
+      border-radius: 2rem 2rem 2rem 2rem;
+  }
+}
 }

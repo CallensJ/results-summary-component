@@ -21,15 +21,10 @@ section .wrapper {
   width: 60rem;
   box-shadow: 5px 5px 9px 2px rgba(171, 171, 171, 0.75);
   display: flex;
-  border-radius: 2rem;
 }
 section .wrapper .globalScoreBloc {
   background: rgb(120, 87, 255);
   background: linear-gradient(180deg, rgb(120, 87, 255) 10%, rgb(46, 43, 233) 100%);
-  border-top-left-radius: 2rem;
-  border-top-right-radius: 2rem;
-  border-bottom-left-radius: 2rem;
-  border-bottom-right-radius: 2rem;
 }
 section .wrapper .globalScoreBloc .content {
   width: 250px;
@@ -118,11 +113,15 @@ section .wrapper .userScoresBloc .btn {
   border: none;
   cursor: pointer;
   font-weight: 700;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   padding: 1.8rem 0;
   background-color: hsl(224, 30%, 27%);
   color: hsl(0, 0%, 100%);
   margin-top: 1rem;
+}
+section .wrapper .userScoresBloc .btn:hover {
+  background: rgb(120, 87, 255);
+  background: linear-gradient(180deg, rgb(120, 87, 255) 10%, rgb(46, 43, 233) 100%);
 }
 
 .reaction,
@@ -133,7 +132,7 @@ section .wrapper .userScoresBloc .btn {
   justify-content: space-between;
   align-items: center;
   border-radius: 0.5rem;
-  padding: 1rem;
+  padding: 1.8rem;
   font-size: 1.4rem;
   margin-bottom: 2rem;
 }
@@ -162,5 +161,17 @@ section .wrapper .userScoresBloc .btn {
 @media (max-width: 375px) {
   .wrapper {
     flex-direction: column;
+  }
+  .wrapper .globalScoreBloc {
+    border-radius: 0 0 2rem 2rem;
+  }
+}
+@media (min-width: 376px) {
+  .wrapper {
+    border: 1px solid red;
+    border-radius: 0 2rem 2rem 0;
+  }
+  .wrapper .globalScoreBloc {
+    border-radius: 2rem 2rem 2rem 2rem;
   }
 }/*# sourceMappingURL=styles.css.map */
