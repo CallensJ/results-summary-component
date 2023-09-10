@@ -81,6 +81,13 @@ section .wrapper .userScoresBloc {
 section .wrapper .userScoresBloc .userContent {
   padding: 1rem;
 }
+section .wrapper .userScoresBloc .userContent .userScore {
+  color: hsl(241, 100%, 89%);
+  font-weight: bold;
+}
+section .wrapper .userScoresBloc .userContent span {
+  font-weight: bold;
+}
 section .wrapper .userScoresBloc .userContent .reaction {
   background-color: hsla(0, 100%, 67%, 0.2);
   margin-top: 2rem;

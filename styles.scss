@@ -106,6 +106,13 @@ section {
       margin: 0 auto;
       .userContent {
         padding: 1rem;
+        .userScore{
+          color: hsl(241, 100%, 89%);
+          font-weight: bold;
+        }
+        span{
+          font-weight: bold;
+        }
         .reaction {
           background-color: hsl(0, 100%, 67%, 20%);
           margin-top: 2rem;
