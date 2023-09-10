@@ -168,7 +168,6 @@ section .wrapper .userScoresBloc .btn:hover {
 }
 @media (min-width: 376px) {
   .wrapper {
-    border: 1px solid red;
     border-radius: 0 2rem 2rem 0;
   }
   .wrapper .globalScoreBloc {
